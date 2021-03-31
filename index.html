@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav>
+        <span> Feedback ! </span>
+        <span style="float: right;">Your Thoughts is Matter Us</span>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section class="box1">
+            <form id="form">
+                <h2>Fill all details</h2><br>
+
+                <p> <label for="name">First Name <span class="req">*</span>:</label>
+                    <input type="text" name="fname" id="name" placeholder="Enter your name" required>
+                </p>
+                <p> <label for="middle">Middle Name:</label>
+                    <input type="text" name="mname" id="middle" placeholder="Enter your middle name">
+                </p>
+                <p> <label for="last">Last Name <span class="req">*</span>:</label>
+                    <input type="text" name="lname" id="last" placeholder="Enter your last name" required>
+                </p>
+                <p>
+
+                    Gender <span class="req">*</span>: Male <input type="radio" name="gender" id="ml" required> Female
+                    <input type="radio" name="gender" id="fl" required>
+                </p>
+                <p> <label for="feedback">Suggestion <span class="req">*</span>:</label>
+                    <textarea name="feedback" id="feedback" cols="25" rows="5" required></textarea>
+                </p>
+                <p>
+                    <input type="submit" onclick='show()' value="submit" class="butten">
+                    <input type="reset" value="reset" class="butten">
+                </p>
+
+            </form>
+        </section>
+        <section class="box2">
+            <div id="display">
+
+            </div>
+        </section>
+    </main>
+    <br>
+</body>
+<footer>
+    <script src="form.js">
+      
+    </script>
+    <p> Copyright &copy; 2021 All rights are reserved </p>
+    <p> Developed & design by: Arjun Gurjar 202120144</p>
+
+</footer>
+
+</html>
